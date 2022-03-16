@@ -22,3 +22,21 @@ I like to get new knowledge and I hope the your team will help me in this
 * JavaScript
 * Git & GitHub
 * Figma (for web development)
+
+### Sample code ###
+
+```
+const reversed = [];
+const reverse = (arr) => {
+     for (let i = arr.length - 1; i >= 0; i -= 1){
+         reversed.push(arr[i])
+     };
+       return reversed;
+   };
+ const myArr = [1, 2, 3];
+ console.log(reverse(myArr));
+
+```
+### Work experience ###
+
+_Coming soon_
