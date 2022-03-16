@@ -40,3 +40,12 @@ const reverse = (arr) => {
 ### Work experience ###
 
 _Coming soon_
+
+### Education ###
+
+0. __University:__ Belarusian National Technical University
+1. __Courses:__
+    IT SHATLE (Front-End Development)
+    RS School Stage-0 (Front-End Development)
+2. __Self education:__
+    JavaScript <https://learn.javascript.ru/>
