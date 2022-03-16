@@ -49,3 +49,9 @@ _Coming soon_
     RS School Stage-0 (Front-End Development)
 2. __Self education:__
     JavaScript <https://learn.javascript.ru/>
+
+### Languages ###
+
+* Russian
+* Belarussian
+* English (level A2-B1)
