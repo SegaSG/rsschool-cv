@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/normolize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -84,7 +85,7 @@
                         <section class="about__content">
                             <h2 class="about__content-title" id="about-me">About</h2>
                             <p class="about__content-text">HELLO!
-                                I am a beginner frontend developer. Shortly about myself.
+                                I am a junior frontend developer. Shortly about myself.
                                 I graduated from BNTU as engineer by profession. And for a long time I worked at the Minsktrans enterprise as a leading engineer. The main responsibilities include the development of technical documentation and drawings. I also dealt with environmental issues.
                                 Due to the lack of personal growth, I decided to move to another job and completed courses in front-end development.
                                 At the moment, there is no commercial development experience.
@@ -103,7 +104,7 @@
                             <ul class="languages-list">
                                 <li class="languages-item">Russian (level C2)</li>
                                 <li class="languages-item">Belarussian (level C2)</li>
-                                <li class="languages-item">English (level A2)</li>
+                                <li class="languages-item">English (level A2-B1)</li>
                             </ul>
                         </section>
                         <section class="skills">
@@ -120,14 +121,18 @@
                                 <li class="skills-box">
                                     <p class="skills-item">JavaScript</p>
                                     <progress class="progres-bar" value="80" max="100">80%</progress>
-                                </li>                              
+                                </li>
+                                <li class="skills-box">
+                                    <p class="skills-item">React</p>
+                                    <progress class="progres-bar" value="75" max="100">75%</progress>
+                                </li>                                
                                 <li class="skills-box">
                                     <p class="skills-item">BEM methodology</p>
                                     <progress class="progres-bar" value="85" max="100">85%</progress>
                                 </li>
                                 <li class="skills-box">
                                     <p class="skills-item">Git & GitHub</p>
-                                    <progress class="progres-bar" value="75" max="100">75%</progress>
+                                    <progress class="progres-bar" value="85" max="100">85%</progress>
                                 </li>
                                 <li class="skills-box">
                                     <p class="skills-item">Figma (for web development)</p>
@@ -160,18 +165,44 @@
                         <div class="draft">
                             <section class="experience">
                                 <h2 class="experience__title" id="experience-me">Projects</h2>
-                                <a class="experience__link" href="https://rolling-scopes-school.github.io/segasg-JSFEPRESCHOOL/portfolio/">
-                                    <figure class="figure-img">
-                                        <img class="experience__image" src="./assets/img/screenshot-portfolio.png"  alt="project-img">
-                                        <figcaption class="experience__subtitle">Progect - PORTFOLIO (HTML, CSS, JS). </figcaption>
-                                    </figure>
-                                </a>
-                                <a class="experience__link" href="https://rolling-scopes-school.github.io/segasg-JSFEPRESCHOOL/js30-tic-tac-toe/">
-                                    <figure class="figure-img">
-                                        <img class="experience__image" src="./assets/img/tic-tac-toe-image.png"  alt="project-img">
-                                        <figcaption class="experience__subtitle">Progect - Tic-Tac-Toe (HTML, CSS, JS). </figcaption>
-                                    </figure>
-                                </a>	
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <a class="experience__link swiper-slide" href="https://rolling-scopes-school.github.io/segasg-JSFE2022Q1/shelter/pages/main/">
+                                            <figure class="figure-img swiper-slide">
+                                                <img class="experience__image" src="./assets/img/shelter-screenshot.png"  alt="project-img">
+                                                <figcaption class="experience__subtitle">Project - Shelter (HTML, CSS, JS). </figcaption>
+                                            </figure>
+                                        </a>
+                                        <a class="experience__link swiper-slide" href="https://rolling-scopes-school.github.io/segasg-JSFEPRESCHOOL/portfolio/">
+                                            <figure class="figure-img swiper-slide">
+                                                <img class="experience__image" src="./assets/img/screenshot-portfolio.png"  alt="project-img">
+                                                <figcaption class="experience__subtitle">Project - PORTFOLIO (HTML, CSS, JS). </figcaption>
+                                            </figure>
+                                        </a>
+                                        <a class="experience__link swiper-slide" href="https://rolling-scopes-school.github.io/segasg-JSFEPRESCHOOL/js30-tic-tac-toe/">
+                                            <figure class="figure-img">
+                                                <img class="experience__image" src="./assets/img/tic-tac-toe-image.png"  alt="project-img">
+                                                <figcaption class="experience__subtitle">Project - Tic-Tac-Toe (HTML, CSS, JS). </figcaption>
+                                            </figure>
+                                        </a>
+                                        <a class="experience__link swiper-slide" href="https://segasg.github.io/mini-calculator/">
+                                            <figure class="figure-img">
+                                                <img class="experience__image" src="./assets/img/calculator.png"  alt="project-img">
+                                                <figcaption class="experience__subtitle">Project - Calculator (HTML, CSS, JS). </figcaption>
+                                            </figure>
+                                        </a>
+                                        <a class="experience__link swiper-slide" href="https://segasg.github.io/mini-quiz/">
+                                            <figure class="figure-img">
+                                                <img class="experience__image" src="./assets/img/quiz.png"  alt="project-img">
+                                                <figcaption class="experience__subtitle">Project - Mini-quiz (HTML, CSS, JS). </figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+
+                                </div>
                             </section>
                         </div>
                     </div>
@@ -187,20 +218,20 @@
                         </a>
                     </div>
                     <div class="footer__copyright">
-                        <a class="logo" href="#">
-                            <img class="logo-link" src="./assets/img/logo.png" alt="logo" width="50" height="50">
-                        </a>
+  
                         <h5 class="footer__copyright-text">2022. Copyright. All Rights Reserved.</h5>
                     </div>
                     <div class="footer__rsschool">
-                        <a class="footer__rsschool-link" href="https://rs.school/js/">
-                            <img class="footer__rsschool-img" src="./assets/img/rs_school-img.png" alt="rsschool" width="100">
+                        <a class="logo" href="#">
+                            <img class="logo-link" src="./assets/img/logo.png" alt="logo" width="50" height="50">
                         </a>
                     </div>
                 </div>                
             </div>
 		</footer>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./index.js"></script> 
     
 </body>

@@ -37,21 +37,19 @@ body {
 
 .container {
     max-width: 1220px;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 0 auto;
 }
 
 .header__inner {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     padding: 0 10px;
     align-items: center;
     background-color: #000000;  
 }
 
-.menu {
-    max-width: 1000px;
-}
+
 
 .logo {
     padding-right: 10px;
@@ -69,7 +67,6 @@ body {
     
 }
 
-
 .menu__list-link{
     transition: 0.3s;
 }
@@ -79,7 +76,7 @@ body {
 
 .main-content__introduction {
     display: flex;
-    max-width: 1200px;
+    max-width: 1220px;
     align-items: center;
     text-align: center;
     background-color: rgb(248, 242, 242);
@@ -245,6 +242,7 @@ body {
 }
 .languages-list {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .languages-item {
@@ -401,6 +399,20 @@ body {
     transform: translateY(-13px) rotate(-45deg);
 }
 
+.swiper{    
+    max-width: 600px;    
+    
+}
+.swiper-wrapper{
+    max-width: 100%;
+}
+.swiper-slide{
+    max-width: 100%;     
+}
+.experience__image{
+    max-width: 100%;
+}
+  
 /* media */
 @media (max-width: 940px){
     .main-content__introduction { 
@@ -446,72 +458,82 @@ body {
 
 @media (max-width: 768px){
     .container {
-        width: calc(100% - 10px);
+        max-width: calc(100% - 5px);
     }
 
     body.lock{
         overflow: hidden;
-        
+    }
+    .header__inner{
+        justify-content: space-between;
     }
 
-    .menu__list.open:after {
-        content: "";
-        width: 100%;
-        min-height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #000;
-        z-index: -10;
-        opacity: 0.5;
+    .menu__list {
+        height: 100vh;
+        max-width: 340px;
+        position: absolute;
+        top: 0px;
+        right: -630px;  
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        transition:  all 0.8s; 
+        overflow: hidden;
+        background-color: #000000;
+    }
+    
+    body.lock {
+        overflow: hidden;
     }
    
-    .menu__list {
-        position: absolute;
-        top: 0;
-        right: -640px;
-        width: 620px;
-        min-height: 100vh;
+    .menu__list.open {
         display: block;
-        padding-left: 127px;
-        padding-top: 144px;
-        background-color: #000000;
-        transition: 0.9s;
-        z-index: 10;
-        overflow: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        align-items: center;                    
+        width: 530px;    
+        background-color: black;       
+        transition:  all 0.8s;
+        z-index: 20;
+        overflow: hidden;       
     }
-
     .menu {
         position: fixed;
-        top: -20px;
+        top: 0;
         right: 0;
-        max-width: 620px;
-        z-index: 10;
-        max-width: 620px;        
-                
-    } 
-    
-    .menu__list.open {
-        right: 0;
-        transition: 0.9s;
+        max-width: 320px;
+        z-index: 20;       
     }
-    .menu__item {        
-        font-size: 34px;
-        margin-bottom: 30px;
-        padding-left: 0;
+
+    .menu__item  {
+        padding-top: 30px;
+        max-width: 320px;        
         margin-right: 0;
-        text-align: center;   
+        margin: 0 auto;
+        text-align: center;
     }
-     
+
     .menu-burger {
-        display: block;
+        position: fixed;
+        right: 15px;
+        top: 5px;
+        display: inline-block;
         width: 50px;
-        z-index: 20;
-        margin-left: 21px;
+        margin-left: auto;
         margin-right: 4px;
         color: #FFFFFF;
+        z-index: 35;
     }
-   
+    .logo {
+        display: inline-block;
+    }
+    .menu__item:nth-of-type(1){
+        margin-top: calc(100% - 40%);
+
+    }
+      
 }
 
 @media (max-width: 680px){
@@ -522,6 +544,10 @@ body {
     }
     .progres-bar{
         max-width: 80px;
+    }
+    .swiper{    
+        max-width: 380px;    
+        
     }
 }
 
@@ -541,5 +567,11 @@ body {
     }
     .footer__rsschool-img{
         width: 60px;
+    }
+    @media (max-width: 440px){
+        .swiper{    
+            max-width: 250px;    
+            
+        }
     }
 }
