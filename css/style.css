@@ -18,7 +18,7 @@ li {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,13 +26,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
 .wrapper {
     max-width: 1220px;
-	height: 100%;
-	margin: 0 auto;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .container {
@@ -46,10 +46,8 @@ body {
     justify-content: space-between;
     padding: 0 10px;
     align-items: center;
-    background-color: #000000;  
+    background-color: #000000;
 }
-
-
 
 .logo {
     padding-right: 10px;
@@ -57,14 +55,13 @@ body {
 
 .menu__list {
     display: flex;
-    justify-content: space-between;    
-    padding: 0;    
+    justify-content: space-between;
+    padding: 0;
 }
 
 .menu__item {
     margin-right: 40px;
     color: #FFFFFF;
-    
 }
 
 .menu__list-link{
@@ -83,7 +80,7 @@ body {
 }
 
 .main-content__introduction-name {
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 .main-photo {
@@ -92,13 +89,13 @@ body {
 
 .about__inner {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .about__content {
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(248, 242, 242);    
+    background-color: rgb(248, 242, 242);
 }
 
 .about__contacts {
@@ -117,7 +114,7 @@ body {
 }
 
 .about-menu__list {
-    padding-left: 10px;    
+    padding-left: 10px;
 }
 
 .about-menu__item {
@@ -142,10 +139,11 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(226, 226, 35);
-    color: #000000;  
+    color: #000000;
 }
+
 .about-menu__list-link {
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
 .about-menu__list-link:hover {
@@ -181,17 +179,17 @@ body {
 }
 .education-certificate{
     margin-top: 15px;
-    
-}
-.certificate-link{
-    transition: 0.3s;
-}
-.certificate-link:hover{
-    border-bottom: 3px solid rgb(226, 226, 35);
-    
 }
 
-.skills{
+.certificate-link {
+    transition: 0.3s;
+}
+
+.certificate-link:hover {
+    border-bottom: 3px solid rgb(226, 226, 35);
+}
+
+.skills {
     width: 100%;
     background-color: rgb(248, 242, 242);
 }
@@ -210,7 +208,7 @@ body {
     margin-left: 15px;
     align-items: center;
 }
-.skills-boxes {   
+.skills-boxes {
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -220,7 +218,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 /* ability */
 .ability__inner {
     display: flex;
@@ -240,6 +237,7 @@ body {
     background-color: #000000;
     color: #FFFFFF;
 }
+
 .languages-list {
     padding-left: 10px;
     padding-right: 10px;
@@ -258,13 +256,14 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(226, 226, 35);
-    color: #000000; 
-    text-align: center; 
+    color: #000000;
+    text-align: center;
 }
 
 .experience__subtitle {
-    transition: 0.3s;  
+    transition: 0.3s;
 }
+
 .experience__subtitle:hover {
     transform: scale(1.2);
     color: rgb(226, 226, 35);
@@ -283,6 +282,7 @@ body {
     color: #000000; 
     text-align: center;
 }
+
 .code-js {
     margin: 0 auto;
 }
@@ -294,13 +294,12 @@ body {
 
 .experience__link {
     display: flex;
-    
 }
+
 .figure-img {
     width: 85%;
     margin: 20px auto;
 }
-
 
 .experience__subtitle {
     text-align: center;
@@ -342,22 +341,22 @@ body {
 }
 .footer__rsschool {
     transition: 0.3s;
- 
- }
+}
+
 .footer__rsschool:hover {
     transform: scale(1.2)
 }
 
 .logo-link {
-    transition: 0.3s;  
+    transition: 0.3s;
 }
 .logo-link:hover {
     transform: scale(1.2)
 }
 .experience__image{
     max-width: 100%;
-    
 }
+
 .main-photo{
     max-width: 100%; 
 }
@@ -394,59 +393,56 @@ body {
 .menu-burger.open .menu-line:nth-child(1){
     transform: translateY(13px) rotate(45deg);
 }
-  
+
 .menu-burger.open .menu-line:nth-child(3){
     transform: translateY(-13px) rotate(-45deg);
 }
 
-.swiper{    
-    max-width: 600px;    
-    
+.swiper{
+    max-width: 600px;
 }
 .swiper-wrapper{
     max-width: 100%;
 }
 .swiper-slide{
-    max-width: 100%;     
+    max-width: 100%;
 }
 .experience__image{
     max-width: 100%;
 }
-  
 /* media */
 @media (max-width: 940px){
-    .main-content__introduction { 
+    .main-content__introduction {
         flex-direction: column;
     }
     .about__inner {
         flex-direction: column;
         text-align: center; 
-         
     }
     .about-menu__item{
         max-width: 100%;
-        justify-content: center;      
+        justify-content: center;
     }
     .education{
         max-width: 100%;
         text-align: center;
     }
     .study__inner {
-        flex-direction: column;  
+        flex-direction: column;
     }
     .languages{
         max-width: 100%;
         text-align: center; 
     }
     .ability__inner {
-        flex-direction: column;  
+        flex-direction: column;
     }
 
-    .languages{        
+    .languages{
         border-left: none;
         border-right: none;
     }
-    .education{        
+    .education{
         border-left: none;
         border-right: none;
     }
@@ -492,24 +488,25 @@ body {
         top: 0;
         right: 0;
         height: 100vh;
-        align-items: center;                    
-        width: 530px;    
-        background-color: black;       
-        transition:  all 0.8s;
+        align-items: center;
+        width: 530px;
+        background-color: black;
+        transition: all 0.8s;
         z-index: 20;
-        overflow: hidden;       
+        overflow: hidden;
     }
+
     .menu {
         position: fixed;
         top: 0;
         right: 0;
         max-width: 320px;
-        z-index: 20;       
+        z-index: 20;
     }
 
     .menu__item  {
         padding-top: 30px;
-        max-width: 320px;        
+        max-width: 320px;
         margin-right: 0;
         margin: 0 auto;
         text-align: center;
@@ -531,9 +528,7 @@ body {
     }
     .menu__item:nth-of-type(1){
         margin-top: calc(100% - 40%);
-
     }
-      
 }
 
 @media (max-width: 680px){
@@ -545,9 +540,8 @@ body {
     .progres-bar{
         max-width: 80px;
     }
-    .swiper{    
-        max-width: 380px;    
-        
+    .swiper{
+        max-width: 380px;
     }
 }
 
@@ -570,8 +564,7 @@ body {
     }
     @media (max-width: 440px){
         .swiper{    
-            max-width: 250px;    
-            
+            max-width: 250px;
         }
     }
 }
